@@ -1,0 +1,12 @@
+chess_game/
+│
+├── main.py                  # Entry point: initializes game, window, main loop
+├── settings.py              # Global flags like sound_enabled, constants
+├── sound.py                 # Handles loading and playing of sounds
+├── ui.py                    # UI components like buttons, top bar, message bar
+├── game.py                  # Chess board logic, game state, piece moves
+├── ai.py                    # If you have AI logic (Minimax, Stockfish, etc.)
+├── assets/
+│   ├── images/              # Piece images
+│   └── sounds/              # Sound files (move.wav, capture.wav, etc.)
+└── README.md

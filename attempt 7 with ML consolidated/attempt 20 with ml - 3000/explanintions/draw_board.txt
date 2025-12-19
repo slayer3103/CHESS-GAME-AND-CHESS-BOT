@@ -1,0 +1,67 @@
+This Python script manages the **chessboard rendering and UI elements** for a chess game using **Pygame**. It includes functions for **drawing the board, sidebars, top bar buttons, bottom message area, and rank/file labels**. Here's a structured breakdown:
+
+---
+
+### **1. Setup and Initialization**
+- **Imports**:
+  - `pygame` for graphics rendering and event handling.
+  - `chess` for chess logic (though it's not actively used in this snippet).
+  - `config` for constants like board dimensions (`WIDTH`, `HEIGHT`, `SQUARE_SIZE`, etc.).
+  - `sound` for playing sound effects.
+
+- **Pygame Initialization**: `pygame.init()` starts Pygame functionality.
+
+- **Create Window**: `win = pygame.display.set_mode((WIDTH, HEIGHT))` sets up the display.
+
+---
+
+### **2. Drawing the Chess Board**
+- **`draw_game_board()`**:
+  - Uses **two alternating colors** (`light brown` and `dark brown`) to **draw an 8x8 board**.
+  - Iterates through each row and column to create the checkered pattern.
+
+---
+
+### **3. Drawing Sidebars**
+- **`draw_sidebars(move_log, white_time, black_time)`**:
+  - **Left Sidebar**:
+    - Displays **timer** for **White and Black**, showing countdown in `MM:SS` format.
+  - **Right Sidebar**:
+    - Displays **move history**, logging each player's moves.
+
+---
+
+### **4. Drawing the Top Bar with Buttons**
+- **`draw_topbar(win)`**:
+  - Creates three buttons: **Mute, Restart, End**.
+  - **Mute Button**:
+    - Turns **red when muted**, otherwise **dark gray**.
+  - Buttons are centered horizontally in the top bar.
+  - Text is rendered inside each button.
+  - Returns a **dictionary of button rectangles** for event handling.
+
+---
+
+### **5. Drawing Bottom Message Bar**
+- **`draw_bottombar(message)`**:
+  - Draws a **gray bar** at the bottom of the screen.
+  - Displays a **message** (e.g., "White to move", "Checkmate!", etc.).
+
+---
+
+### **6. Adding Labels for Chess Notation**
+- **`draw_labels()`**:
+  - **Ranks (1-8)**: Displayed vertically along the **left sidebar**.
+  - **Files (a-h)**: Displayed horizontally along the **bottom**.
+  - Uses **Unicode conversion (`ord('a') + i`)** for dynamic file lettering.
+
+---
+
+### **Summary**
+✔ **Visual rendering** for chessboard, UI elements, and game status  
+✔ **Move history tracking**  
+✔ **Timers for each player**  
+✔ **Dynamic rank/file labels**  
+✔ **Clickable buttons** for user actions  
+
+Would you like to enhance the UI further, maybe with animations or hover effects? 🚀

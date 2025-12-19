@@ -1,0 +1,39 @@
+This Python script handles **sound effects** in a **chess game** using **Pygame's mixer module**. It allows sound playback, muting, and loading predefined audio clips.
+
+### **1. Setup and Initialization**
+- **`pygame.mixer.init()`** initializes Pygame's sound system.
+- **Global Variables**:
+  - `muted`: Tracks whether sounds are muted (`False` by default).
+  - `loaded_sounds`: Dictionary to store loaded sound files.
+
+### **2. Loading Sounds**
+- **`load_sounds()`**:
+  - Loads various chess-related **sound effects** from the `"assets/sounds/"` folder:
+    - **click** (for button presses)
+    - **move** (when a piece moves)
+    - **capture** (for taking a piece)
+    - **check** (when a player is in check)
+    - **checkmate** (game-ending checkmate)
+    - **promotion** (when a pawn promotes)
+    - **game_over** (when the game ends)
+  - Stores them in `loaded_sounds` dictionary and returns it.
+
+### **3. Playing Sounds**
+- **`play_sound(event_type, sounds)`**:
+  - Plays a sound **only if**:
+    - The game is **not muted** (`muted == False`).
+    - The event type exists in `sounds` dictionary.
+
+### **4. Muting and Unmuting Sounds**
+- **`toggle_mute()`**:
+  - Toggles `muted` **on or off** when called.
+- **`is_muted()`**:
+  - Returns `True` or `False`, indicating whether sound is muted.
+
+### **Summary**
+✔ Loads **predefined sound effects** for game events  
+✔ Allows **muting/unmuting** of sounds dynamically  
+✔ Plays sounds **only when appropriate**  
+✔ Improves game **feedback and immersion**  
+
+Would you like to add volume control or additional effects? 🚀

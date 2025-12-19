@@ -1,0 +1,10 @@
+Evaluating attempt 20 with ml (hard)...
+Position: Italian Opening
+  Accuracy: 0.00 | Avg Time: 74.79s
+Position: Knight Endgame
+  Accuracy: 0.40 | Avg Time: 0.01s
+
+Summary:
+Overall Accuracy: 0.20
+Average Move Time: 37.40s
+PS D:\MP2_CHESS\attempt 20 with mll consolidated\attempt 20 with ml>

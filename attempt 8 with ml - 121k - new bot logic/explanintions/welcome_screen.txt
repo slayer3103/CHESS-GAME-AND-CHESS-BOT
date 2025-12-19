@@ -1,0 +1,40 @@
+This Python script implements a **welcome screen** for a chess game using **Pygame**. It manages the initial user interface, sound effects, and event handling. Here’s a structured explanation:
+
+### **1. Setup and Initialization**
+- **Import Statements**:
+  - `pygame` for handling graphics and event loops.
+  - `sys` for quitting the program.
+  - `config` for predefined constants (`WIDTH`, `HEIGHT`).
+  - `sound` for playing button click sounds.
+  
+- **Initialize Sounds**:
+  - `sounds = sound.load_sounds()` loads game sounds.
+  - `pygame.mixer.init()` initializes Pygame's sound system.
+
+### **2. Global Game State**
+- **Variables `game_started` and `selected_opponent`** track whether the game has started and which opponent is selected.
+- `set_game_status(started, opponent)`: Updates game state.
+- `get_game_status()`: Returns the game state.
+
+### **3. Creating Buttons**
+- **`get_welcome_button(win)`**:
+  - Defines two buttons: `"Start Game"` and `"Quit"`, positioned at the center of the screen.
+
+### **4. Drawing the Welcome Screen**
+- **`draw_welcome_screen(win, buttons)`**:
+  - Loads and scales a background image.
+  - Draws a **title ("Welcome to Chess Game!")** at the top.
+  - Creates buttons with **black fill, white border**, and text labels.
+
+### **5. Handling Events**
+- **`handle_welcome_events(event, buttons)`**:
+  - Detects when the window is closed (`pygame.QUIT`) and exits the game.
+  - Detects mouse clicks (`pygame.MOUSEBUTTONDOWN`), checks if the user clicked **"Start Game"** or **"Quit"**, and plays a click sound.
+
+### **6. Functionality Breakdown**
+✔ Displays a **visually appealing welcome screen**  
+✔ Handles user interaction with **buttons**  
+✔ Plays **click sound effects** for button presses  
+✔ Allows transitioning from the **welcome screen to game logic**  
+
+This script sets up the **initial chess game interface** before loading the main gameplay. Would you like to extend this further, like adding animations or more menu options? 🚀
