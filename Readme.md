@@ -40,12 +40,30 @@ The chess bot is powered by the **Minimax Algorithm**, which evaluates possible 
 ## 📂 Project Structure
 
 ```
-Chess-Game/
-│── assets/              # Images and game resources
-│── src/                 # Core game logic and AI implementation
-│── main.py              # Entry point of the application
-│── requirements.txt     # Project dependencies
-│── README.md            # Project documentation
+CHESS-GAME-AND-CHESS-BOT/
+│── project/
+│   │── assets/                     # Images, backgrounds, sounds, and chess pieces
+│   │   │── backgrounds/
+│   │   │── pieces/
+│   │   │── sounds/
+│   │── comparision/                # Model comparison and evaluation scripts
+│   │── model training/             # Dataset preprocessing and model training
+│   │── chess_model.ipynb           # Model experimentation notebook
+│   │── chess_evaluator.pth         # Trained model weights
+│   │── main.py                     # Entry point of the application
+│   │── computer_player.py          # AI bot logic
+│   │── evaluation.py               # Board evaluation functions
+│   │── chess_pieces.py             # Piece definitions and logic
+│   │── draw_board.py               # Board rendering
+│   │── game_screen.py              # Gameplay UI handling
+│   │── config.py                   # Configuration settings
+│   │── sound.py                    # Sound handling
+│   │── welcome_screen.py           # Initial UI screen
+│   │── difficulty_selection.py     # Difficulty settings
+│   │── choose_opponent.py          # Opponent selection
+│   │── draw2.py / draw_board_2.py  # Alternate rendering modules
+│   │── game_screen_2.py / game_screen3.py # Additional UI variants
+│
 ```
 
 ---
